@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I LOVE YOU</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial, sans-serif';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(255, 204, 213, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: none; /* Hide all sections initially */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .page1 {
+            display: block; /* Show the initial page by default */
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #ff6f91;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4876;
+        }
+
+        .reasons {
+            text-align: left;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .reasons h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .reasons ul {
+            list-style-type: disc;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+
+        .dates {
+            color: black;
+        }
+
+        .songs {
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .songs h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .songs ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .love-message {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        .love-message button {
+            background-color: transparent;
+            border: none;
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1em;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <div class="container page1">
+        <h2>Do you love me?</h2>
+        <button onclick="showPage('page2')">Yes</button>
+        <button onclick="showPage('page3')">No</button>
+    </div>
+
+    <div class="container page2">
+        <h2>I love you more than you love me!</h2>
+        <button onclick="showPage('page4')">Next</button>
+    </div>
+
+    <div class="container page3">
+        <h2>I will still love you no matter what!</h2>
+    </div>
+
+    <div class="container page4">
+        <div class="reasons">
+            <h3>Reasons Why I Love You</h3>
+            <ul>
+                <li>Your kindness</li>   
+                <li>Your sense of humor</li>
+                <li>Your smile</li>  
+                <liYoursupport</li>                 
+                <li>You treat me the best</li>                 
+                <li>How special you make me feel</li>                 
+                <li>You let me talk about my problems</li>                 
+                <li>You validate my stupid feelings as well</li>                 
+                <li>Your perfect Eyes</li>                 
+                <li>You believe in me</li>                 
+                <li>You're Proud of me</li>                 
+                <li>You value me</li>                 
+                <li>You trust me</li>                 
+                <li>You're always strong</li>                 
+                <li>You give meaning to my life</li>                 
+                <li>You never give up</li>                 
+                <li>You understand me the best</li>                 
+                <li>The way you talk</li>                 
+                <li>You always end up making me feel better no matter how fucked things are</li>                
+                <li>I can be a kid around you</li>                 
+                <li>You never judge me</li>                 
+                <li>You make me feel Loved</li>                 
+                <li>You're mature</li>                 
+                <li>You're ambitious</li>
+                <!-- Add more reasons as needed -->
+            </ul>
+        </div>
+        <button onclick="showPage('page5')">Next</button>
+    </div>
+
+    <div class="container page5">
+        <div class="dates">
+            <h2>Dates I Wanna Have with You</h2>
+            <ul>
+                <li>Watching a sunrise</li>
+                <li>Stargazing</li>
+                <li>Going on a spontaneous road trip</li>
+                <li>Hiking</li>
+                <li>Attending a concert</li>
+                <li>watching movies together</li>
+                <li>waking up next to each other</li>
+                <li>picnic</li>
+                <li>watching movies from the car</li>
+                <li>doing your hair</li>
+                <li>doing skincare together</li>
+                <li>shopping</li>
+                <li>long walks</li>
+                <li>going to the Beach</li>
+                <li>doing your makeup</li>
+                <li>trempoline parks</li>
+                <li>ice-skating</li>
+                <li>pottery</li>
+                <li>vintage cafess</li>
+                <li>museum</li>
+                <li>Art gallery(even if it's boring)</li>
+                <li>cook together</li>
+                <li>karaoke</li>
+                <li>dancing with you</li>
+                <li>bowling</li>
+                <!-- Add more date ideas as needed -->
+            </ul>
+        </div>
+        <div>There's so much more I wanna do with you</div>
+        <button onclick="showPage('page6')">Next</button>
+    </div>
+
+    <div class="container page6">
+        <div class="songs">
+            <h3>Songs That Remind Me of You</h3>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0qc44SLU9zYJpE8FdY7EAm?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <!-- Add more songs as needed -->
+            </ul>
+        </div>
+        <div class="love-message">
+            <button>CHAHAT</button>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.container');
+            pages.forEach(page => page.style.display = 'none'); // Hide all pages
+
+            const currentPage = document.querySelector(`.${pageId}`);
+            currentPage.style.display = 'block'; // Display the selected page
+        }
+    </script>
+</body>
+</html>
